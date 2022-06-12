@@ -4,8 +4,13 @@
 # Email : lucas.pauzies@hotmail.fr
 
 # Setup global variables for the installation
-
+## Owner
 owner=LPauzies
+## Repos
+db=home-network-monitoring-database
+etl=home-network-monitoring-etl
+api=home-network-monitoring-api
+ui=home-network-monitoring-ui
 
 clone_if_not_exists() {
     if [[ ! -d "$1" ]]
@@ -16,11 +21,6 @@ clone_if_not_exists() {
         exit
     fi
 }
-
-db=home-network-monitoring-database
-etl=home-network-monitoring-etl
-api=home-network-monitoring-api
-ui=home-network-monitoring-ui
 
 python_source_activate=.venv/Scripts/activate
 
