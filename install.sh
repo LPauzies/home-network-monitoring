@@ -10,7 +10,7 @@ owner=LPauzies
 clone_if_not_exists() {
     if [[ ! -d "$1" ]]
     then
-        git clone git@github.com:$owner/$1.git
+        git clone https://github.com/$owner/$1.git
     else
         echo "Folder already exists. Aborted."
         exit
